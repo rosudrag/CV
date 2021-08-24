@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1629805974 "d:/source/CV/CV.tex" "CV.pdf" "CV" 1629805975
+["pdflatex"] 1629806317 "d:/source/CV/CV.tex" "CV.pdf" "CV" 1629806339
   "C:/Users/rosudrag/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1629805561 9744273 13ff9c5da0a36aac73b1a08343317cc3 ""
   "C:/Users/rosudrag/AppData/Local/MiKTeX/pdftex/config/pdftex.map" 1629805886 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/rosudrag/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458477487 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -42,9 +42,9 @@
   "C:/Users/rosudrag/AppData/Local/Programs/MiKTeX/tex/latex/tools/multicol.sty" 1622550326 31530 f9ba11d1c179e918d577463ebdb887ca ""
   "C:/Users/rosudrag/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388494052 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "CV.aux" 1629805910 32 044b7f8fc9779af7531264e0c5c84b6d ""
-  "CV.tex" 1629805973 7179 267aed8914534e34349ae417a771bf5b ""
+  "CV.tex" 1629806317 4654 3cbcad3f163b73651aa5d1b388b35081 ""
   "a4-mancs.sty" 1629804692 1156 15fd3dcd049801030927247a0466712b ""
-  "d:/source/CV/CV.tex" 1629805973 7179 267aed8914534e34349ae417a771bf5b ""
+  "d:/source/CV/CV.tex" 1629806317 4654 3cbcad3f163b73651aa5d1b388b35081 ""
   "res.cls" 1629805801 25065 00878584ba637ae375b57ce6f6d58323 ""
   (generated)
   "CV.pdf"
