@@ -4,6 +4,7 @@
 \usepackage{fancyhdr}
 \usepackage{multicol}
 \usepackage{url}
+\usepackage[hidelinks]{hyperref}
 \setlength\columnsep{40pt}
 \setlength{\topmargin}{-0.6in}
 \setlength{\textheight}{9.8in}
@@ -25,80 +26,73 @@
 
 \begin{resume}
 \vspace{-10mm}
+
 \section{\large\bf Professional Experience}
 
-\section{\bf Senior Software Developer, Intrum Global Technologies (2023 - Present)}
+\section{\bf Senior Software Developer, EnBW (via arnia) (2024 - Present)}
+Part of the engineering team behind SCALE --- EnBW's Azure-based CRM and lead management platform serving 5.5 million energy customers across 40+ .NET microservices.
 \begin{itemize}
-\item Successfully reengineered the app search integration with Elasticsearch, achieving a robust and efficient data synchronization mechanism that significantly enhanced search functionality.
-\item Led the creation of an internal training and knowledge sharing platform, promoting a culture of continuous learning and collaboration within the team.
-\item Recognized for outstanding mentorship and positive impact on team development, elevating overall team performance and efficiency.
-\item Drove the upgrade of the project's technology stack to the latest .NET technologies, ensuring state-of-the-art development practices.
-\item Functioned as the key developer in the team, guiding critical project decisions and leading technical strategies.
-\item Demonstrated exceptional problem-solving skills, adaptability in agile environments, and a commitment to continuous personal and professional growth, making significant contributions to software quality and team dynamics.
+\item Design and build deployment pipelines for Dynamics CRM web resources, replacing manual developer intervention with automated builds and Dataverse imports.
+\item Plan and execute .NET version upgrades for Azure Function apps and APIs, including infrastructure-as-code rewrites and CI/CD pipeline updates across multiple services.
+\item Develop performance test suites and automated reporting, establishing the team's first repeatable load verification across billing and real estate domains.
+\item Implement public REST APIs for CRM entity management, with end-to-end verification against Dataverse and documented edge case coverage.
+\item Drive technical standards through code review, test framework modernization across 10+ repositories, and shared operational tooling for monitoring and incident response.
+\end{itemize}
+\textbf{Technologies:} C\#, .NET 8--10, Azure Functions, Durable Functions, Service Bus, EF Core, Angular, Dynamics 365/Dataverse, CosmosDB, Azure SQL, Bicep, Azure DevOps.
+
+\section{\large\bf Open Source}
+
+\section{\bf Technical Lead, LOTRAOM (C\#, .NET 8) \normalfont{|} \href{https://github.com/haterade22/LOTRAOM}{github.com/haterade22/LOTRAOM}}
+Lord of the Rings total conversion mod for Mount \& Blade II: Bannerlord. Architect the project's engineering foundation: clean architecture with adapter-pattern game engine isolation, dependency injection, TDD with xUnit, and Architecture Decision Records. Build a cross-platform mod launcher (Avalonia UI) with auto-update server (ASP.NET Core, TimescaleDB). Establish development workflows and quality guardrails adopted by all contributors.
+
+\section{\large\bf Previous Experience}
+
+\section{\bf Senior Software Developer, Intrum Global Technologies (2023 - 2024)}
+\begin{itemize}
+\item Reengineer the application search integration with Elasticsearch, designing a new data synchronization mechanism that replaced the previous unreliable approach.
+\item Build an internal training and knowledge sharing platform, establishing a recurring practice of cross-team learning.
+\item Guide technical direction as the lead developer on the team, driving .NET upgrades and mentoring junior developers.
 \end{itemize}
 
+\newpage
 \section{\bf Software Developer Contractor, Locta Limited (2018 - 2023)}
 \begin{itemize}
-\item Led the transition to a cloud-based Kubernetes infrastructure, significantly enhancing scalability and reducing operational costs.
-\item Developed a robust ElasticSearch-based search engine application, focusing on big data analytics from all UK councils, resulting in increased accuracy and user satisfaction through advanced relevancy scoring and geolocation filtering.
-\item Implemented and optimized CI/CD pipelines, streamlining the development process and enhancing overall efficiency.
-\item Directed the upgrade of legacy applications to .Net Core, contributing to modernization and efficient containerization.
-\item \textbf{Technologies:} .Net Framework/Core, C\#, Kubernetes, Docker, ElasticSearch, Node.js, ReactJS, RedisDB, Hangfire, Data8.
+\item Lead the migration from on-premise infrastructure to Kubernetes, setting up the containerized environment and deployment workflows from scratch.
+\item Build an Elasticsearch-powered search engine aggregating data from all UK local councils, with relevancy scoring and geolocation filtering.
+\item Modernize legacy .NET Framework applications to .NET Core, containerize them, and establish CI/CD pipelines where none existed.
 \end{itemize}
+\textbf{Technologies:} .NET Framework/Core, C\#, Kubernetes, Docker, ElasticSearch, ReactJS, Node.js, RedisDB, Hangfire.
 
-\section{\bf Security Analyst/Software Developer Contractor, BitBox (2017 - 2018)}
-\begin{itemize}
-\item Identified and resolved security vulnerabilities in the video game "Life is Feudal," which led to an expanded role in game development.
-\item Reworked and upgraded key embedded pages - the Market (Auction House) and the game map - to ReactJS, significantly improving design, user experience, and performance.
-\item The enhancements made to these features contributed to a substantially improved overall gaming experience.
-\item Provided ReactJS mentorship, sharing expertise and fostering skill development within the team.
-\item \textbf{Technologies:} PHP, ReactJS, Node.js, MariaDB, Angular2.
-\end{itemize}
+\section{\large\bf Earlier Roles}
+\vspace{1mm}
 
-\section{\bf Software Developer, AO.COM (2016 - 2018)}
-\begin{itemize}
-\item Played a key role in developing secure and efficient checkout and payment systems, leveraging advanced algorithms in an Agile/TDD environment to streamline the checkout process.
-\item Innovated a payment provider template system, significantly simplifying the integration of new payment methods and ensuring compliance with various laws and legislations.
-\item \textbf{Technologies:} .Net, C\#, ElasticSearch, Docker, MSSQL, Node.js, Ruby, RedisDB.
-\end{itemize}
+{\bf Security Analyst / Software Developer, BitBox (2017--2018)} --- Identified and fixed security vulnerabilities in the MMO ``Life is Feudal''; rebuilt key game UI (Auction House, world map) in ReactJS.
 
-\section{\bf Software Developer, Code ComputerLove (2015 - 2016)}
-\begin{itemize}
-\item Significantly enhanced the development pipeline by integrating Teamcity, Octopus, and Jenkins with a strong focus on automated acceptance testing.
-\item Heavily employed Test-Driven Development (TDD) practices to develop high-quality, modular components, leading to more reliable and maintainable code.
-\item \textbf{Technologies:} .Net, C\#, ElasticSearch, Microsoft SQL, RabbitMQ, Node.js, RedisDB.
-\end{itemize}
+\vspace{2mm}
+{\bf Software Developer, AO.COM (2016--2018)} --- Built checkout and payment systems in a strict TDD environment; designed a payment provider template for multi-market compliance.
 
-\section{\bf Internship - Software Developer, CIVICA (2013 - 2014)}
-\begin{itemize}
-\item Applied university-learned techniques in a real-world context, quickly adapting to company technologies and contributing effectively to the team.
-\item \textbf{Technologies:} C\#, OracleSQL, WCF, EntityFramework, ServiceBus, WPF, Agile/Scrum.
-\end{itemize}
-
+\vspace{2mm}
+{\bf Software Developer, Code ComputerLove (2015--2016)} --- First professional role; learned TDD discipline, CI/CD practices (TeamCity, Octopus, Jenkins), and software craftsmanship from experienced mentors.
 
 \section{\large\bf Education}
 
 \section{\bf BSc (Hons) in Computer Science, University of Manchester (2011 - 2015)}
-\begin{itemize}
-\item Graduated with a 2:1, incorporating industrial experience. Focused on team-based projects using Agile and pair programming methodologies.
-\end{itemize}
+Graduated with a 2:1, incorporating industrial experience at CIVICA (C\#, Entity Framework, ServiceBus). Focused on Agile and team-based delivery.
 
 \section{\large\bf Skills}
 \vspace{2mm}
 \section{IT}
 \begin{itemize}
-\item Proficient in C\#, JavaScript, Node.js, and MSSQL. Skilled in building enterprise applications and developing microservices.
-\item {\bf Applications and Frameworks:} Experienced in .NET Framework/Core, Kubernetes, Docker, ElasticSearch, ReactJS, Angular. Proficient in CI/CD pipeline development and automated testing.
-\item {\bf Environments:} Adept in Windows and Linux environments, with expertise in cloud infrastructure and Kubernetes migrations.
-\item {\bf Methodologies:} Proficient in Agile, TDD, Scrum, and Kanban, with a strong background in mentoring and training in these methodologies.
-\item {\bf Other Skills:} Extensive experience in data analysis, search engine optimization, and integrating payment systems.
+\item {\bf Core:} C\#/.NET, Azure (Functions, Service Bus, SQL, CosmosDB, APIM), Dynamics 365, TypeScript/Angular, Docker, Kubernetes.
+\item {\bf Practices:} Clean Architecture, TDD, DDD, CQRS, Microservices, CI/CD, Event-Driven Architecture.
 \end{itemize}
 
 \section{Languages}
 \begin{itemize}
-\item {\bf English:} IELTS 7.0
+\item {\bf English:} Fluent (IELTS 7.0, 10+ years professional experience in UK/EU).
 \item {\bf Romanian:} Native speaker.
-\item {\bf French \& Spanish:} Basic conversational proficiency.
+\item {\bf Spanish:} A2 level.
+\item {\bf French:} Basic conversational proficiency.
 \end{itemize}
 
 
