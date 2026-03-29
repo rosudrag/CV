@@ -1,35 +1,50 @@
-\documentclass[12pt,a4paper]{res}
-\usepackage{a4-mancs}
-\usepackage{pslatex}
-\usepackage{fancyhdr}
-\usepackage{multicol}
-\usepackage{url}
+\documentclass[11pt,a4paper]{article}
+\renewcommand{\normalsize}{\fontsize{12}{14.5}\selectfont}\normalsize
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[top=1.6cm, bottom=1.6cm, left=2cm, right=2cm]{geometry}
+\usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
-\setlength\columnsep{40pt}
-\setlength{\topmargin}{-0.6in}
-\setlength{\textheight}{9.8in}
-\setlength{\headsep}{0.2in}
-\setlength{\headheight}{14.49998pt}
-\setlength{\textheight}{297mm}
-\renewcommand{\headrulewidth}{0pt}
-\cfoot{}
-\pagestyle{fancy}
+\usepackage{titlesec}
+\usepackage{parskip}
+
+% Section formatting
+\titleformat{\section}{\normalsize\bfseries\uppercase}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{5pt}
+
+% Compact lists
+\setlist[itemize]{nosep, leftmargin=1.5em, topsep=2pt, parsep=1pt}
+
+% Paragraph spacing
+\setlength{\parskip}{3pt plus 1pt}
+
+\pagestyle{empty}
 
 \begin{document}
-\thispagestyle{empty}
-	\begin{center}
-	\Large{Dragos Romario Rosu  \\ [12pt]}
-	\normalsize Valencian Community, Spain\\
-	Email: rosudrag.dev@gmail.com\\
-	Website: \url{https://www.rosudrag.com/}
-	\end{center}
 
-\begin{resume}
-\vspace{-10mm}
+% ── Header ──────────────────────────────────────────────────────────
+\begin{center}
+{\LARGE\bfseries Dragos Romario Rosu}\\[6pt]
+Valencian Community, Spain\\[2pt]
++34\,642\,078\,758 \quad\textbar\quad
+\href{mailto:rosudrag.dev@gmail.com}{rosudrag.dev@gmail.com} \quad\textbar\quad
+\href{https://www.rosudrag.com/}{www.rosudrag.com}
+\end{center}
 
-\section{\large\bf Professional Experience}
+\vspace{3mm}
 
-\section{\bf Senior Software Developer, EnBW (via arnia) (2024 - Present)}
+% ── Summary ─────────────────────────────────────────────────────────
+Senior .NET developer with 10+ years of experience building cloud-native systems on Azure. Proven track record delivering CRM platforms, search engines, and microservice architectures at scale.
+
+\vfill
+
+% ── Professional Experience ─────────────────────────────────────────
+\section{Professional Experience}
+
+\textbf{Senior Software Developer, EnBW} \hfill 2024 -- Present\\
+{\itshape Contracted via arnia}
+
+\smallskip
 Part of the engineering team behind SCALE --- EnBW's Azure-based CRM and lead management platform serving 5.5 million energy customers across 40+ .NET microservices.
 \begin{itemize}
 \item Design and build deployment pipelines for Dynamics CRM web resources, replacing manual developer intervention with automated builds and Dataverse imports.
@@ -40,22 +55,18 @@ Part of the engineering team behind SCALE --- EnBW's Azure-based CRM and lead ma
 \end{itemize}
 \textbf{Technologies:} C\#, .NET 8--10, Azure Functions, Durable Functions, Service Bus, EF Core, Angular, Dynamics 365/Dataverse, CosmosDB, Azure SQL, Bicep, Azure DevOps.
 
-\section{\large\bf Open Source}
+\vfill
 
-\section{\bf Technical Lead, LOTRAOM (C\#, .NET 8) \normalfont{|} \href{https://github.com/haterade22/LOTRAOM}{github.com/haterade22/LOTRAOM}}
-Lord of the Rings total conversion mod for Mount \& Blade II: Bannerlord. Architect the project's engineering foundation: clean architecture with adapter-pattern game engine isolation, dependency injection, TDD with xUnit, and Architecture Decision Records. Build a cross-platform mod launcher (Avalonia UI) with auto-update server (ASP.NET Core, TimescaleDB). Establish development workflows and quality guardrails adopted by all contributors.
-
-\section{\large\bf Previous Experience}
-
-\section{\bf Senior Software Developer, Intrum Global Technologies (2023 - 2024)}
+\textbf{Senior Software Developer, Intrum Global Technologies} \hfill 2023 -- 2024
 \begin{itemize}
 \item Reengineer the application search integration with Elasticsearch, designing a new data synchronization mechanism that replaced the previous unreliable approach.
 \item Build an internal training and knowledge sharing platform, establishing a recurring practice of cross-team learning.
 \item Guide technical direction as the lead developer on the team, driving .NET upgrades and mentoring junior developers.
 \end{itemize}
 
-\newpage
-\section{\bf Software Developer Contractor, Locta Limited (2018 - 2023)}
+\vfill
+
+\textbf{Software Developer Contractor, Locta Limited} \hfill 2018 -- 2023
 \begin{itemize}
 \item Lead the migration from on-premise infrastructure to Kubernetes, setting up the containerized environment and deployment workflows from scratch.
 \item Build an Elasticsearch-powered search engine aggregating data from all UK local councils, with relevancy scoring and geolocation filtering.
@@ -63,38 +74,60 @@ Lord of the Rings total conversion mod for Mount \& Blade II: Bannerlord. Archit
 \end{itemize}
 \textbf{Technologies:} .NET Framework/Core, C\#, Kubernetes, Docker, ElasticSearch, ReactJS, Node.js, RedisDB, Hangfire.
 
-\section{\large\bf Earlier Roles}
-\vspace{1mm}
+\vfill
 
-{\bf Security Analyst / Software Developer, BitBox (2017--2018)} --- Identified and fixed security vulnerabilities in the MMO ``Life is Feudal''; rebuilt key game UI (Auction House, world map) in ReactJS.
+\newpage
 
-\vspace{2mm}
-{\bf Software Developer, AO.COM (2016--2018)} --- Built checkout and payment systems in a strict TDD environment; designed a payment provider template for multi-market compliance.
+% ── Open Source ─────────────────────────────────────────────────────
+\section{Open Source}
 
-\vspace{2mm}
-{\bf Software Developer, Code ComputerLove (2015--2016)} --- First professional role; learned TDD discipline, CI/CD practices (TeamCity, Octopus, Jenkins), and software craftsmanship from experienced mentors.
+\textbf{Technical Lead, LOTRAOM (C\#, .NET 8)} | \href{https://github.com/haterade22/LOTRAOM}{github.com/haterade22/LOTRAOM}
 
-\section{\large\bf Education}
+\smallskip
+Lord of the Rings total conversion mod for Mount \& Blade II: Bannerlord. Architect the project's engineering foundation: clean architecture with adapter-pattern game engine isolation, dependency injection, TDD with xUnit, and Architecture Decision Records. Build a cross-platform mod launcher (Avalonia UI) with auto-update server (ASP.NET Core, TimescaleDB). Establish development workflows and quality guardrails adopted by all contributors.
 
-\section{\bf BSc (Hons) in Computer Science, University of Manchester (2011 - 2015)}
+\bigskip
+
+% ── Earlier Roles ───────────────────────────────────────────────────
+\section{Earlier Roles}
+
+\textbf{Security Analyst / Software Developer, BitBox} \hfill 2017 -- 2018\\
+Identified and fixed security vulnerabilities in the MMO ``Life is Feudal''; rebuilt key game UI (Auction House, world map) in ReactJS.
+
+\medskip
+
+\textbf{Software Developer, AO.COM} \hfill 2016 -- 2018\\
+Built checkout and payment systems in a strict TDD environment; designed a payment provider template for multi-market compliance.
+
+\medskip
+
+\textbf{Software Developer, Code ComputerLove} \hfill 2015 -- 2016\\
+First professional role; learned TDD discipline, CI/CD practices (TeamCity, Octopus, Jenkins), and software craftsmanship from experienced mentors.
+
+\bigskip
+
+% ── Education ───────────────────────────────────────────────────────
+\section{Education}
+
+\textbf{BSc (Hons) in Computer Science, University of Manchester} \hfill 2011 -- 2015\\
 Graduated with a 2:1, incorporating industrial experience at CIVICA (C\#, Entity Framework, ServiceBus). Focused on Agile and team-based delivery.
 
-\section{\large\bf Skills}
-\vspace{2mm}
-\section{IT}
+\bigskip
+
+% ── Skills \& Languages ────────────────────────────────────────────
+\section{Skills \& Languages}
+
 \begin{itemize}
-\item {\bf Core:} C\#/.NET, Azure (Functions, Service Bus, SQL, CosmosDB, APIM), Dynamics 365, TypeScript/Angular, Docker, Kubernetes.
-\item {\bf Practices:} Clean Architecture, TDD, DDD, CQRS, Microservices, CI/CD, Event-Driven Architecture.
+\item \textbf{Core:} C\#/.NET, Azure (Functions, Service Bus, SQL, CosmosDB, APIM), Dynamics 365, TypeScript/Angular, Docker, Kubernetes.
+\item \textbf{Practices:} Clean Architecture, TDD, DDD, CQRS, Microservices, CI/CD, Event-Driven Architecture.
+\item \textbf{Languages:} English (fluent, IELTS 7.0, 10+ years UK/EU), Romanian (native), Spanish (A2), French (basic conversational).
 \end{itemize}
 
-\section{Languages}
-\begin{itemize}
-\item {\bf English:} Fluent (IELTS 7.0, 10+ years professional experience in UK/EU).
-\item {\bf Romanian:} Native speaker.
-\item {\bf Spanish:} A2 level.
-\item {\bf French:} Basic conversational proficiency.
-\end{itemize}
+\bigskip
 
+% ── Interests ──────────────────────────────────────────────────────
+\section{Interests}
 
-\end{resume}
+Reverse engineering software to understand how things work under the hood. Video games and game modding. Automating everything with AI tools.
+
 \end{document}
